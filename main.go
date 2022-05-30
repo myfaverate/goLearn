@@ -4,7 +4,12 @@ import "fmt"
 
 func main() {
 	// test
-	fmt.Println(Reverse("abcd"))
+	input:="abcdefghigklmn"
+	rev:=Reverse(input)
+	doubleRev:=Reverse(rev)
+	fmt.Printf("原始字符串: %q\n", input)
+	fmt.Printf("反转之后的字符串%q\n",rev)
+	fmt.Printf("双重反转之后的字符串%q\n",doubleRev)
 }
 
 // 字符串反转 更改
